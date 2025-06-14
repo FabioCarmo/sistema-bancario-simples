@@ -31,10 +31,10 @@ while True:
     '''
 
     print(opcoes_menu)
-    print(f"Valor em conta: R${saldo_conta: .2f}" ,end="\n")
+    print(f"Saldo atual: R${saldo_conta: .2f}" ,end="\n")
 
     # Tratamento de erro, caso o usuario
-    # Digitar um valor do tipo caractere
+    # Digitar um valor do tipo String
     try:
         opcao_de_operacao = int(input("Digite a opção desejada: "))
     except ValueError:
@@ -92,4 +92,4 @@ while True:
         sleep(1)
         break
     else:
-        print("Opção Invalida!")
+        print("Algo deu errado. Tente novamente!")
